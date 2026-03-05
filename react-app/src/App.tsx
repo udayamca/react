@@ -8,7 +8,7 @@ function App() {
       <GridItem area="nav">
         <NavBar />
       </GridItem>
-      <Show when={{ lg: true }}>
+      <Show above="lg">
         <GridItem area="aside" bg="gold">
           Aside
         </GridItem>
