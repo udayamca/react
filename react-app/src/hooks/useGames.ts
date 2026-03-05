@@ -9,11 +9,18 @@ interface FetchGamesResponse {
   results: Game[];
 }
 
+export interface Platform {
+    id: number;
+    name: string;
+    slug: string;
+}
+
 export interface Game {
   id: number;
   name: string;
   released: string;
   background_image: string;
+  parent_platforms: { platform: Platform }[];
 }
 
 const useGames = () => {
