@@ -9,7 +9,7 @@ interface FetchGamesResponse {
   results: Game[];
 }
 
-interface Game {
+export interface Game {
   id: number;
   name: string;
   released: string;
