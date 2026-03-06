@@ -10,7 +10,6 @@ interface SortSelectorProps {
 const SortSelector = ({
   onSelectSortOrder,
   selectedSortOrder,
-  sortOrder,
 }: SortSelectorProps) => {
   const sortOrders = [
     { value: "relevance", label: "Relevance" },
